@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>comment box</title>
+	<script type = "text/javascript" src = "commentbox.js"></script>
+
+<!-- <script>
+	function validateForm(form) {
+		password=form.password.value;
+		if (password == 'kkk') {
+			alert("hello");
+		}
+		else{
+
+			alert("please enter valid details");
+		}
+	}
+
+
+
+</script>	
+ --> 
+
+</head>
+<body>
+	<div class="container" style="border-radius: 5px;
+  background-color: #DB7093;
+  padding: 20px;">
+		
+		
+		<form  name="myform" >
+			<h1 style="text-align: center;">COMMENT BOX</h1>
+		<label>NAME</label><br>
+		<input  required><br>
+		<label >PASSWORD</label><br>
+		<input id="password" type="password" required><br>
+		<label>COMMENT</label><br>
+		<input  id="comment" required><br>
+		<br>
+		<br>
+		<button  id="post" onclick="validateForm()" >Post</button>
+		
+  </form>
+  
+  <p id="welcome"></p>
+  <h1>COMMENTS</h1>
+		<textarea id="addcomments" rows="4" cols="80">
+		
+		</textarea>
+	</div>
+	
+	
+
+	
+</body>
+</html>
