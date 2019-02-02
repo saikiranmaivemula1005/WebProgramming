@@ -1,0 +1,25 @@
+<div>
+    <h2 style="text-align:center; color:tomato">Product Catalog</h2>
+        <div class="card">
+          <img src="{{image[i]}}"  style="width:100%">
+          <h1 style="color:lightseagreen" >{{p[i].title}}</h1>
+          <h2>Description:</h2><p>{{p[i].description}}</p>
+          <h3>Quantity: {{p[i].quantity}}</h3>
+        </div> 
+        <button style="float: right" (click)="next()">Next</button>
+        <button style="float: left"  (click)="previous()">Previous</button>
+      </div>
+      <div>
+          <button  (click)="edit()">edit</button>
+          <button   (click)="delete()">delete</button>
+      </div>
+      <div *ngIf="activateform">
+        TITLE:<input type="text" [(ngModel)]="newtitle"><br>
+        DESCRIPTION:<input type="text" [(ngModel)]="newdescription"><br>
+        Quantity:<input type="text" [(ngModel)]="newquantity"><br>
+        <button (click)="print()">submit</button>
+      </div>
+    <router-outlet></router-outlet>
+    
+
+<router-outlet></router-outlet>
